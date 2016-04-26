@@ -1,0 +1,18 @@
+.container {
+	margin: 0 auto;
+	max-width: $container-width;
+}
+
+.row {
+	display: flex;
+}
+
+.column {
+	flex: 1;
+}
+
+@for $i from 1 through $columns-max {
+	.column-#{$i} {
+		flex: 0 0 100%/$columns-max*$i;
+	}
+}

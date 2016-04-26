@@ -1,0 +1,16 @@
+button, input[type=button], input[type=file], input[type=submit], input[type=reset] {
+	background-color: #ccc;
+	border: none;
+	padding: 0.5rem 1rem;
+	outline: none;
+	cursor: pointer;
+}
+
+button:hover, input[type=button]:hover, input[type=file]:hover, input[type=submit]:hover, input[type=reset]:hover {
+	background-color: #ddd;
+}
+
+label {
+	font-weight: bold;
+	display: block;
+}

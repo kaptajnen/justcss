@@ -1,0 +1,29 @@
+{
+  "name": "justcss",
+  "version": "0.0.1",
+  "description": "A basic UI library built with Sass",
+  "main": "justcss.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node-sass src/justcss.scss --output-style compressed justcss.min.css",
+    "watch": "node-sass --watch src/justcss.scss --recursive justcss.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaptajnen/justcss.git"
+  },
+  "keywords": [
+    "css",
+    "ui",
+    "lightweight"
+  ],
+  "author": "Jonas Laursen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kaptajnen/justcss/issues"
+  },
+  "homepage": "https://github.com/kaptajnen/justcss#readme",
+  "devDependencies": {
+    "node-sass": "^3.5.3"
+  }
+}
