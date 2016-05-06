@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JustCSS test page</title>
+		<link rel="stylesheet" type="text/css" href="justcss.css">
+		<style type="text/css">
+			.column {
+				box-sizing: border-box;
+				text-align: center;
+				border: 1px #ccc solid;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1>JustCSS</h1>
+
+			<h2>Containers</h2>
+			<p>A container is a centered div with a max-width of 1140px. This can be modified with the <code>$container-width</code> variable. It is applied using the <code>container</code> class. This entire page is inside a container.</p>
+<pre>
+&lt;div class="container"&gt;
+	&lt;p&gt;Content goes here&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+
+			<h2>Grids</h2>
+			<p>Grids can be created with the <code>row</code> and <code>column</code> classes. Each column will be the same size so in a row with 2 columns, each column will be 50% wide.</p>
+
+			<div class="row">
+				<div class="column">A column</div>
+				<div class="column">Another column</div>
+			</div>
+<pre>
+&lt;div class="row"&gt;
+	&lt;div class="column"&gt;A column&lt;/div&gt;
+	&lt;div class="column"&gt;Another column&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+			<p>You can additionally add the <code>column-1</code> through <code>column-8</code> classes to define the size of a column. By default there are 8 sizes but this can easily be changed with the <code>$columns-max</code> variable.</p>
+			<div class="row">
+				<div class="column column-8"><p>column-8</p></div>
+			</div>
+			<div class="row">
+				<div class="column column-7"><p>column-7</p></div>
+				<div class="column column-1"><p>column-1</p></div>
+			</div>
+			<div class="row">
+				<div class="column column-6"><p>column-6</p></div>
+				<div class="column column-2"><p>column-2</p></div>
+			</div>
+			<div class="row">
+				<div class="column column-5"><p>column-5</p></div>
+				<div class="column column-3"><p>column-3</p></div>
+			</div>
+			<div class="row">
+				<div class="column column-4"><p>column-4</p></div>
+				<div class="column column-4"><p>column-4</p></div>
+			</div>
+			<div class="row">
+				<div class="column column-3"><p>column-3</p></div>
+				<div class="column column-5"><p>column-5</p></div>
+			</div>
+			<div class="row">
+				<div class="column column-2"><p>column-2</p></div>
+				<div class="column column-6"><p>column-6</p></div>
+			</div>
+			<div class="row">
+				<div class="column column-1"><p>column-1</p></div>
+				<div class="column column-7"><p>column-7</p></div>
+			</div>
+<pre>
+&lt;div class="row"&gt;
+	&lt;div class="column column-8"&gt;&lt;p&gt;column-8&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+	&lt;div class="column column-7"&gt;&lt;p&gt;column-7&lt;/p&gt;&lt;/div&gt;
+	&lt;div class="column column-1"&gt;&lt;p&gt;column-1&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+	&lt;div class="column column-6"&gt;&lt;p&gt;column-6&lt;/p&gt;&lt;/div&gt;
+	&lt;div class="column column-2"&gt;&lt;p&gt;column-2&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+	&lt;div class="column column-5"&gt;&lt;p&gt;column-5&lt;/p&gt;&lt;/div&gt;
+	&lt;div class="column column-3"&gt;&lt;p&gt;column-3&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+	&lt;div class="column column-4"&gt;&lt;p&gt;column-4&lt;/p&gt;&lt;/div&gt;
+	&lt;div class="column column-4"&gt;&lt;p&gt;column-4&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+	&lt;div class="column column-3"&gt;&lt;p&gt;column-3&lt;/p&gt;&lt;/div&gt;
+	&lt;div class="column column-5"&gt;&lt;p&gt;column-5&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+	&lt;div class="column column-2"&gt;&lt;p&gt;column-2&lt;/p&gt;&lt;/div&gt;
+	&lt;div class="column column-6"&gt;&lt;p&gt;column-6&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+	&lt;div class="column column-1"&gt;&lt;p&gt;column-1&lt;/p&gt;&lt;/div&gt;
+	&lt;div class="column column-7"&gt;&lt;p&gt;column-7&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+			<h2>Forms</h2>
+			<form>
+				<label for="input">Text field</label>
+				<input type="text" id="input" />
+				<input type="submit" value="Submit" />
+				<button>I am a button</button>
+				<label><input type="radio" /> Radio!</label>
+				<label><input type="radio" /> Radio!</label>
+				<input type="date" />
+			</form>
+		</div>
+	</body>
+</html>
