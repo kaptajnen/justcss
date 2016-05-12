@@ -10,6 +10,7 @@ button, input[type=button], input[type=file], input[type=submit], input[type=res
 
 button:hover, input[type=button]:hover, input[type=file]:hover, input[type=submit]:hover, input[type=reset]:hover {
 	background-color: #ddd;
+	transition: background-color 0.1s ease-in 0s;
 }
 
 label {
@@ -26,6 +27,7 @@ input, select, textarea {
 
 	&:focus {
 		border-color: $input-border-color-active;
+		transition: border-color 0.1s ease-in 0s;
 	}
 }
 
