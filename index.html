@@ -14,7 +14,7 @@
 	<body>
 		<div class="container">
 			<h1>JustCSS</h1>
-
+			<p>A small CSS UI framework for fast prototyping without the fuss.</p>
 			<a href="https://github.com/kaptajnen/justcss"><button>Github</button></a>
 
 			<h2>Containers</h2>
@@ -106,6 +106,7 @@
 </pre>
 
 			<h2>Forms</h2>
+			<p>Forms have some basic styling that do not require any additional classes to be applied.</p>
 			<form>
 				<label for="input">Text field</label>
 				<input type="text" id="input" />
@@ -115,6 +116,25 @@
 				<label><input type="radio" name="radio" /> Radio 2!</label>
 				<input type="date" />
 			</form>
+<pre>
+&lt;form&gt;
+	&lt;label for=&quot;input&quot;&gt;Text field&lt;/label&gt;
+	&lt;input type=&quot;text&quot; id=&quot;input&quot; /&gt;
+	&lt;input type=&quot;submit&quot; value=&quot;Submit&quot; /&gt;
+	&lt;button type=&quot;button&quot;&gt;I am a button&lt;/button&gt;
+	&lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;radio&quot; /&gt; Radio 1!&lt;/label&gt;
+	&lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;radio&quot; /&gt; Radio 2!&lt;/label&gt;
+	&lt;input type=&quot;date&quot; /&gt;
+&lt;/form&gt;
+</pre>
+
+
+			<h2>Messages</h2>
+			<p>A message can be used to show important information after an action is performed. It is applied using the <code>message</code> class.</p>
+			<div class="message"><p>This is a message</p></div>
+<pre>
+&lt;div class="message"&gt;&lt;p&gt;This is a message&lt;/p&gt;&lt;/div&gt;
+</pre>
 		</div>
 	</body>
 </html>

@@ -1,5 +1,5 @@
 button, input[type=button], input[type=file], input[type=submit], input[type=reset] {
-	background-color: #ccc;
+	background-color: $color-primary;
 	border: none;
 	padding: 0.5rem 0.8rem;
 	outline: none;
@@ -10,7 +10,7 @@ button, input[type=button], input[type=file], input[type=submit], input[type=res
 }
 
 button:enabled:hover, input[type=button]:enabled:hover, input[type=file]:enabled:hover, input[type=submit]:enabled:hover, input[type=reset]:enabled:hover {
-	background-color: #ddd;
+	background-color: lighten($color-primary, 8%);
 	transition: background-color 0.1s ease-in 0s;
 }
 
