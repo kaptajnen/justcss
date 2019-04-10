@@ -1,6 +1,6 @@
 {
   "name": "justcss",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A basic UI library built with Sass",
   "main": "justcss.css",
   "scripts": {
@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/kaptajnen/justcss#readme",
   "devDependencies": {
-    "node-sass": "^3.5.3"
+    "node-sass": "^4.11.0"
   }
 }
