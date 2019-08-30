@@ -1,0 +1,32 @@
+.dropdown {
+	position: relative;
+
+	ul {
+		background-color: $color-background;
+		position: absolute;
+		top: 100%;
+		left: 0px;
+		display: none;
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+		border: 1px solid $color-primary;
+	}
+
+	&.active ul {
+		display: block;
+	}
+
+	li {
+		a {
+			display: block;
+			padding: .25rem .5rem;
+			text-decoration: none;
+			color: $color-text;
+
+			&:hover {
+				background-color: $color-primary;
+			}
+		}
+	}
+}
