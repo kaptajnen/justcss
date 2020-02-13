@@ -16,18 +16,18 @@ button:enabled:hover, input[type=button]:enabled:hover, input[type=file]:enabled
 
 label {
 	font-weight: bold;
-	display: block;
 }
 
 input, select, textarea {
 	margin-bottom: 1rem;
 	border-style: solid;
 	border-width: 1px;
-	border-color: $input-border-color;
+	border-color: $form-border-color;
+	background-color: $form-background-color;
 	outline: none;
 
 	&:focus {
-		border-color: $input-border-color-active;
+		border-color: $form-border-color-active;
 		transition: border-color 0.1s ease-in 0s;
 	}
 }
