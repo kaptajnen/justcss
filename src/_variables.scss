@@ -12,8 +12,10 @@ $form-background-color: #fff !default;
 $form-border-color: #ccc !default;
 $form-border-color-active: darken($form-border-color, 33%) !default;
 
+// colors
+$color-background: #fff !default;
+$color-text: #000 !default;
 $color-primary: #ccc !default;
-
 $color-success: #10ff00 !default;
 $color-warning: #ffee00 !default;
 $color-danger: #ff4300 !default;
