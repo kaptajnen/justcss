@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .container {
 	margin: 0 auto;
 	max-width: $container-width;
@@ -13,6 +15,6 @@
 
 @for $i from 1 through $columns-max {
 	.column-#{$i} {
-		flex: 0 0 100%/$columns-max*$i;
+		flex: 0 0 math.div(100%, $columns-max)*$i;
 	}
 }

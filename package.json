@@ -1,12 +1,12 @@
 {
   "name": "justcss",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "A basic UI library built with Sass",
   "main": "justcss.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node-sass src/justcss.scss --output-style compressed justcss.min.css",
-    "watch": "node-sass --watch src/justcss.scss --recursive justcss.css"
+    "build": "sass src/justcss.scss --style compressed --no-source-map justcss.min.css",
+    "watch": "sass --watch src/justcss.scss --no-source-map justcss.css"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/kaptajnen/justcss#readme",
   "devDependencies": {
-    "node-sass": "^4.13.1"
+    "sass": "^1.35.2"
   }
 }
